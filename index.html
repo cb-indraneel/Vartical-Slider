@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide swiper-slide-cus {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-slide-cus {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .subtitle-middle-content h6 {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 30.87px;
+            letter-spacing: 7.2px;
+            color: white;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .title-middle-content h2 {
+            font-size: 70px;
+            font-weight: 400;
+            line-height: 82px;
+            color: white;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .button-middle-content button {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 27px;
+            text-align: center;
+            padding: 15px 45px;
+            border: none;
+
+        }
+
+        .middle-content {
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 80px;
+        }
+        .main-inner-content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .justify-end-cus{
+            justify-content: end;
+        }
+        .justify-center-cus{
+            justify-content: center;
+        }
+        .swiper-cus .swiper-pagination-bullet{
+            background: white!important;
+            opacity: 0.8;
+            margin: 10px 0px!important;
+            height: 6px;
+            width: 6px;
+        }
+        .swiper-cus .swiper-pagination-bullet.swiper-pagination-bullet-active{
+            transform: scale(1.7);
+            opacity: 1;
+        }
+        @media screen and (max-width: 480px) {
+            .middle-content{
+                padding: 0px;
+            }
+            .justify-end-cus{
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper swiper-cus">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-cus" style="background-image: url('./images/h10_page1.jpg');">
+                <div class="main-inner-content justify-end-cus">
+                    <div class="middle-content">
+                        <div class="subtitle-middle-content">
+                            <h6>NEW ARRIVALS</h6>
+                        </div>
+                        <div class="title-middle-content">
+                            <h2>Red Season Project</h2>
+                        </div>
+                        <div class="button-middle-content">
+                            <button><span>Shop This Look</span> <span><i class="opal-icon-arrow"
+                                        aria-hidden="true"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-cus" style="background-image: url('./images/h10_page2.jpg');">
+                <div class="main-inner-content justify-center-cus">
+                    <div class="middle-content">
+                        <div class="subtitle-middle-content">
+                            <h6>NEW ARRIVALS</h6>
+                        </div>
+                        <div class="title-middle-content">
+                            <h2>Fall Winter
+                                Solider</h2>
+                        </div>
+                        <div class="button-middle-content">
+                            <button><span>Shop This Look</span> <span><i class="opal-icon-arrow"
+                                        aria-hidden="true"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-cus" style="background-image: url('./images/h10_page3.jpg');">
+                <div class="main-inner-content">
+                    <div class="middle-content">
+                        <div class="subtitle-middle-content">
+                            <h6>NEW ARRIVALS</h6>
+                        </div>
+                        <div class="title-middle-content">
+                            <h2>The Raincoat
+                                Fashion</h2>
+                        </div>
+                        <div class="button-middle-content">
+                            <button><span>Shop This Look</span> <span><i class="opal-icon-arrow"
+                                        aria-hidden="true"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-cus" style="background-image: url('./images/h10_page1.jpg');">
+                <div class="main-inner-content justify-end-cus">
+                    <div class="middle-content">
+                        <div class="subtitle-middle-content">
+                            <h6>NEW ARRIVALS</h6>
+                        </div>
+                        <div class="title-middle-content">
+                            <h2>Red Season Project</h2>
+                        </div>
+                        <div class="button-middle-content">
+                            <button><span>Shop This Look</span> <span><i class="opal-icon-arrow"
+                                        aria-hidden="true"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-cus" style="background-image: url('./images/h10_page2.jpg');">
+                <div class="main-inner-content justify-center-cus">
+                    <div class="middle-content">
+                        <div class="subtitle-middle-content">
+                            <h6>NEW ARRIVALS</h6>
+                        </div>
+                        <div class="title-middle-content">
+                            <h2>Fall Winter
+                                Solider</h2>
+                        </div>
+                        <div class="button-middle-content">
+                            <button><span>Shop This Look</span> <span><i class="opal-icon-arrow"
+                                        aria-hidden="true"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide-cus" style="background-image: url('./images/h10_page3.jpg');">
+                <div class="main-inner-content">
+                    <div class="middle-content">
+                        <div class="subtitle-middle-content">
+                            <h6>NEW ARRIVALS</h6>
+                        </div>
+                        <div class="title-middle-content">
+                            <h2>The Raincoat
+                                Fashion</h2>
+                        </div>
+                        <div class="button-middle-content">
+                            <button><span>Shop This Look</span> <span><i class="opal-icon-arrow"
+                                        aria-hidden="true"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            direction: "vertical",
+            slidesPerView: 1,
+            mousewheel: true,
+            speed: 2000,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
